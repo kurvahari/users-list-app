@@ -20,7 +20,7 @@ export default usersReducers=createRenderer(state=initialState,action){
                 isLoading:false,
                 ...state
             }
-        case type.FETCH_FAILUR:
+        case type.FETCH_USERS_FAILUR:
             return{
                 ...state,
                 isLoading:false,
