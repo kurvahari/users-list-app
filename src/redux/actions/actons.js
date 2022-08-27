@@ -1,25 +1,19 @@
 import axios from "axios"
 import * as type from "./actionsTypes"
 
-const fetchUsersStart=()=>{
-    return{
-        type:type.FETCH_USER_START
-    }
-}
+const fetchUsersStart=()=>({
+    type:type.FETCH_USER_START  
+})
 
-const fetchUsersSuccess=(users)=>{
-    return{
-        type:type.FETCH_USER_SUCCESS,
-        payload:users
-    }
-}
+const fetchUsersSuccess=(users)=>({
+    type:type.FETCH_USER_SUCCESS,
+    payload:users
+})
 
-const fetchUersFailur=(error)=>{
-    return{
-        type:type.FETCH_USERS_FAILUR,
-        payload:error
-    }
-}
+const fetchUersFailur=(error)=>({
+    type:type.FETCH_USERS_FAILUR,
+    payload:error
+})
 
 const fetchusers=()=>{
     return function(dispatch){

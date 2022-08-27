@@ -1,14 +1,14 @@
-import { type } from "@testing-library/user-event/dist/type";
-import { createRenderer } from "react-dom/test-utils";
+import * as type from "../actions/actionsTypes"
 
 const initialState={
     users:[],
-    isLoading,
-    error
+    isLoading:false,
+    error:''
 }
 
-export default usersReducers=createRenderer(state=initialState,action){
-    switch(action.type){
+const usersReducers=(state=initialState,action)=>{
+
+    switch (action.type){
         case type.FETCH_USER_START:
             return{
                 ...state,
@@ -30,3 +30,5 @@ export default usersReducers=createRenderer(state=initialState,action){
             return state
     }
 }
+
+export default usersReducers
