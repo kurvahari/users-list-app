@@ -1,7 +1,6 @@
 import {useDispatch,useSelector} from "react-redux"
 import fetchusers from "../../redux/actions/actons"
 import UserItem from "../UserItem/userItem"
-import LoadingIcons from 'react-loading-icons'
 
 import "./users.css"
 
