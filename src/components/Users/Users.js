@@ -1,5 +1,7 @@
-import { useSelector,useDispatch } from "react-redux"
+import {useDispatch } from "react-redux"
 import fetchusers from "../../redux/actions/actons"
+import UserItem from "../UserItem/userItem"
+import "./users.css"
 
 import { useEffect } from "react"
 
@@ -9,12 +11,11 @@ const Users=()=>{
     useEffect(()=>{
         dispatch(fetchusers())
     },[])
-    const {usersList}=useSelector((state)=>({...state}))
 
     return(
-        <div>
-            <h1>Welcome to users</h1>
-            {usersList.map((eachUser)=><p>{eachUser.id}</p>)}
+        <div className="users-container">
+            <h1 className="heading">Welcome to users</h1>
+            <UserItem/>
         </div>
     )
 }

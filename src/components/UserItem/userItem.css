@@ -1,0 +1,19 @@
+.item-card{
+    background-color: aquamarine;
+    height:100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    color: black;
+    font-family: "Roboto";
+    font-weight:bold;
+    margin:5px;
+}
+.item-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
