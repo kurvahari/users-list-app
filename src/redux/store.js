@@ -10,7 +10,7 @@ import storage from "redux-persist/lib/storage";
 const persistConfig={
     key:"persist-users",
     storage
-}
+ }
 
 const persistreducer=persistReducer(persistConfig,usersReducers)
 

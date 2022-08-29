@@ -15,6 +15,7 @@ const fetchUersFailur=(error)=>({
     payload:error
 })
 
+
 const fetchusers=()=>{
     return function(dispatch){
         dispatch(fetchUsersStart())
@@ -28,5 +29,6 @@ const fetchusers=()=>{
 
     }
 }
+
 
 export default fetchusers
