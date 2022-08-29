@@ -16,9 +16,9 @@ const usersReducers=(state=initialState,action)=>{
             }
         case type.FETCH_USER_SUCCESS:
             return{
+                ...state,
                 usersList:action.payload,
-                isLoading:false,
-                ...state
+                isLoading:false 
             }
         case type.FETCH_USERS_FAILUR:
             return{
