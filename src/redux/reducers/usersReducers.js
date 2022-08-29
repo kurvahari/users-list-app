@@ -1,7 +1,7 @@
 import * as type from "../actions/actionsTypes"
 
 const initialState={
-    users:[],
+    usersList:[],
     isLoading:false,
     error:''
 }
@@ -16,7 +16,7 @@ const usersReducers=(state=initialState,action)=>{
             }
         case type.FETCH_USER_SUCCESS:
             return{
-                users:action.payload,
+                usersList:action.payload,
                 isLoading:false,
                 ...state
             }

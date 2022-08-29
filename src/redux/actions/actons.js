@@ -1,5 +1,5 @@
-import axios from "axios"
 import * as type from "./actionsTypes"
+import axios from "axios"
 
 const fetchUsersStart=()=>({
     type:type.FETCH_USER_START  
